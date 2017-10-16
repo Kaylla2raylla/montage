@@ -1,0 +1,37 @@
+img {
+  height: 200px;
+}
+
+.image {
+  height: 200px;
+  width: 200px;
+
+  animation-name: flyingCat;
+  animation-duration: 15s;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.25,.25,.75,.75);
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+
+
+@keyframes flyingCat {
+  0% {
+    transform:translate(0px, 0px);
+  }
+  20% {
+    transform:translate(704px, -378px);
+  }
+  40% {
+    transform:translate(0px, -145px);
+  }
+  60% {
+    transform:translate(0px, -478px);
+  }
+  80% {
+    transform:translate(704px, 33px);
+  }
+  100% {
+    transform:translate(0px, 0px);
+  }
